@@ -1,6 +1,14 @@
-const HomePage = () => {
+
+import { Hero } from "components/Hero/Hero"
+import { Container } from "utilities/UI/Common.styled"
+
+export const HomePage = () => {
     return(
-        <h1>Rent a car here</h1>
+        <Container>
+           <Hero/>
+        
+        </Container>
+        
     )
 }
 

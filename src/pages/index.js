@@ -1,3 +1,5 @@
-export {HomePage} from "./HomePage";
-export {CatalogPage} from "./CatalogPage";
-export {FavoritesPage} from "./FavoritesPage";
+import HomePage from "./HomePage";
+import CatalogPage from "./CatalogPage";
+import FavoritesPage from "./FavoritesPage";
+
+export {HomePage, CatalogPage, FavoritesPage}
