@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom"
-import { Advantage, AdvantagesList, HeroButton, Title } from "./Hero.styled"
+import { Advantage, AdvantagesList, HeroButton, HeroWrapper, Title } from "./Hero.styled"
 
 
 export const Hero = () => {
     const navigate = useNavigate()
     return (
-        <>
+        <HeroWrapper>
         {/* <img src="../../utilities/audi-5024614_1920.jpg" width="100%"></img> */}
         <Title>Find your rental car here</Title>
         <AdvantagesList>
@@ -15,7 +15,7 @@ export const Hero = () => {
             <Advantage>No hidden fees</Advantage>
         </AdvantagesList>
         <HeroButton title="Find a car" onClick={() => navigate('/catalog')}/>
-        </>
+        </HeroWrapper>
         
     )
 }

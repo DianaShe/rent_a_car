@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { colors } from "utilities/colors"
 
 export const List = styled.ul`
 display: flex;
@@ -8,7 +9,7 @@ gap: 6px;
 height: 40px;
 overflow: hidden;
 margin-bottom: 14px;
-color: rgba(18, 20, 23, 0.50);`
+color: ${colors.features};`
 
 export const Feature = styled.li`
 font-family: 'Manrope', sans-serif;
@@ -18,7 +19,7 @@ font-weight: 400;
 line-height: 1.5;
 padding-right: 6px;
 &:not(:last-child) {
-    border-right: 1px solid rgba(18, 20, 23, 0.10);
+    border-right: 1px solid ${colors.features};
 }
 `
 

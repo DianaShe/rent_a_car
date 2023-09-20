@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import {heartIcon} from '../../utilities/icons/icons'
+import {heartIcon} from '../../utilities/icons'
 import { Button } from "components/Button/Button";
+import { colors } from "utilities/colors";
 
 export const CardWrapper = styled.li`
 width: 274px; 
@@ -17,13 +18,17 @@ export const Icon = styled(heartIcon)`
 position: absolute;
 top: 14px;
 right: 14px;
-stroke: #fff;
+stroke: ${colors.white};
+cursor:pointer;
 
 &:hover {
-    stroke: #3470FF;
-    fill: #3470FF;
+    stroke: ${colors.accent};
+    fill: ${colors.accent};
 }
 `
+export const IconActive = styled(Icon)`
+stroke: ${colors.accent};
+fill: ${colors.accent};`
 
 export const Image = styled.img`
 width: 274px; 
@@ -37,7 +42,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 padding-right: 10px;
-color: #121417;
+color: ${colors.text};
 font-family: Manrope;
 font-size: 16px;
 font-style: normal;

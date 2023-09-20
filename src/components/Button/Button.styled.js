@@ -6,7 +6,7 @@ width: 100%;
 border-radius: 12px;
 border: none;
 background: ${colors.accent};
-color: #fff;
+color: ${colors.white};
 font-family: Manrope;
 font-size: 14px;
 font-style: normal;
@@ -17,5 +17,5 @@ padding-bottom: 12px;
 cursor: pointer;
 
 &:active, &:hover {
-    background: #0B44CD;
+    background: ${colors.buttonActive};
 }`

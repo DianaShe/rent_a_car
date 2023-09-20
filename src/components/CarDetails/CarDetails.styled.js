@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-export const Wrapper = styled.div`
-  // padding: 40px;
-`
+import { colors } from "utilities/colors";
 
 export const Image = styled.img`
 width: 461px;
@@ -23,7 +20,7 @@ margin-bottom: 24px;`
 
 export const SubTitle = styled.h3`
 margin-bottom: 8px;
-color: #121417;
+color: ${colors.text};
 font-family: Manrope;
 font-size: 14px;
 font-style: normal;
@@ -39,7 +36,7 @@ margin-bottom: 24px;`
 export const Condition = styled.div`
 padding: 7px 14px;
 border-radius: 35px;
-background: #F9F9F9;
+background: ${colors.background};
 color: #363535;
 font-family: Montserrat;
 font-size: 12px;
@@ -50,5 +47,5 @@ letter-spacing: -0.24px;`
 
 
 export const Highlight = styled.span`
-color: #3470FF;
+color: ${colors.accent};
 `

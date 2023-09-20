@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { closeIcon } from '../../utilities/icons/icons';
+import { closeIcon } from '../../utilities/icons';
+import { colors } from 'utilities/colors';
 
 export const Overlay = styled.div`
   position: fixed;
@@ -7,7 +8,7 @@ export const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(18, 20, 23, 0.50);
+  background: ${colors.features};
   display: flex;
   justify-content: center;
   z-index: 1200;
@@ -21,7 +22,7 @@ export const ModalStyled = styled.div`
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.5s ease, transform 0.3s ease;
-  background: #fff;
+  background: ${colors.white};
   border-radius: 24px;
   padding: 40px;
 
@@ -38,6 +39,6 @@ export const CloseButton = styled(closeIcon)`
   right: 16px;
   background-size: contain;
   background-repeat: no-repeat;
-  stroke: #121417;
+  stroke: ${colors.text};
   cursor: pointer;
 `;

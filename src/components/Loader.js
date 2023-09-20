@@ -1,5 +1,5 @@
 import { ThreeDots } from 'react-loader-spinner';
-import { colors } from './colors';
+import { colors } from '../utilities/colors';
 
 export default function Loader() {
   return (
