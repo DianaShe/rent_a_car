@@ -1,5 +1,4 @@
 import { updateFavorite } from 'utilities/api';
-
 import {
   CardWrapper,
   FeaturesWrapper,
@@ -20,32 +19,12 @@ import { Accent } from 'utilities/UI/Common.styled';
 
 export const Card = ({ car }) => {
   const [isShow, setIsShow] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(false);
+  
+  const [thisCar, setThisCar] = useState(car)
 
   const onShowModal = () => {
     setIsShow(!isShow);
   };
-
-  //   const saveFavorite = (favorite) => {
-  //     let favoriteCars = []
-  //     const savedCars = JSON.parse(localStorage.getItem("cars"))
-
-  //     if (savedCars) {
-  //         favoriteCars = favoriteCars.concat(savedCars)
-  //     }
-
-  //     const indexInStorage = favoriteCars.findIndex(car=> car.id === favorite.id)
-
-  //     if (indexInStorage !== -1)  {
-  //         favoriteCars.splice(indexInStorage, 1)
-  //         setIsFavorite(false)
-  //     } else {
-  //         favoriteCars.push(favorite)
-  //         setIsFavorite(true)
-  //     }
-
-  //     localStorage.setItem("cars", JSON.stringify(favoriteCars))
-  //   }
 
   const {
     favorite,
@@ -59,13 +38,16 @@ export const Card = ({ car }) => {
     model,
     id,
     accessories,
-  } = car;
+  } = thisCar;
 
-  console.log("favorite" + favorite)
   const city = address.split(',')[1];
+
   const country = address.split(',')[2];
+
   const carModel = type === model ? null : model;
+
   const length = make.length + model.length;
+
   const features = carModel
     ? [city, country, rentalCompany, type, carModel, id, accessories[0]]
     : [city, country, rentalCompany, type, id, accessories[0]];
@@ -75,14 +57,16 @@ export const Card = ({ car }) => {
       favorite: value,
       id,
     };
-    updateFavorite({ update }).then(() => setIsFavorite(value));
+    updateFavorite({ update }).then((res) => setThisCar(res));
   };
 
   return (
     <CardWrapper>
       <ImageWrapper>
         <Image src={img} alt={make} />
-        {favorite === true || isFavorite ? (
+        {
+        favorite
+         ? (
           <IconActive
             width={18}
             height={18}

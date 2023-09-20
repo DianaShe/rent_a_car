@@ -13,6 +13,15 @@ const getCars = async page => {
   }
 };
 
+const getCar = async id => {
+    try {
+      const response = await instance.get(`/adverts/${id}`);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
 const getFavoriteCars = async () => {
   try {
     const response = await instance.get('/adverts?favorite=true');
@@ -32,4 +41,4 @@ const updateFavorite = async ({ update }) => {
   }
 };
 
-export { getCars, getFavoriteCars, updateFavorite };
+export { getCars, getFavoriteCars, updateFavorite, getCar };
