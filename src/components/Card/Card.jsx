@@ -19,7 +19,7 @@ import { Accent } from 'utilities/UI/Common.styled';
 
 export const Card = ({ car }) => {
   const [isShow, setIsShow] = useState(false);
-  
+
   const [thisCar, setThisCar] = useState(car)
 
   const onShowModal = () => {
@@ -29,7 +29,7 @@ export const Card = ({ car }) => {
   const {
     favorite,
     make,
-    img,
+    img = "https://cdn.pixabay.com/photo/2021/04/17/18/32/car-6186528_1280.jpg",
     year,
     rentalPrice,
     address,

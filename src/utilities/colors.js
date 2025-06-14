@@ -4,6 +4,6 @@ export const colors = {
     buttonActive: "#0B44CD",
     text: "#121417",
     features: "rgba(18, 20, 23, 0.50)",
-    background: "#F9F9F9",
+    background: "#bfcae5",
     sidebarBack: "#363535",
 }

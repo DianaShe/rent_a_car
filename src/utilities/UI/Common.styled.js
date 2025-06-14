@@ -16,10 +16,15 @@ export const LoadMore = styled.button`
 `;
 
 export const Container = styled.div`
+width: 100%;
+// height: 100vh;
+background-image: url("https://cdn.pixabay.com/photo/2021/09/07/11/53/car-6603726_1280.jpg");
+background-position: center;
+background-color: #2a2a2a;
+background-repeat: no-repeat;
+background-attachment: fixed;
   display: grid;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
 `;
 
 export const Page = styled.div`

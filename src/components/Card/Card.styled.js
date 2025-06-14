@@ -4,12 +4,13 @@ import { Button } from "components/Button/Button";
 import { colors } from "utilities/colors";
 
 export const CardWrapper = styled.li`
-width: 274px; 
+width: 274px;
+max-height: 447px;
+background-color: ${colors.background};
+border-radius: 14px;
 `
 
 export const ImageWrapper = styled.div`
-// width: 274px; 
-// height: 286px;
 margin-bottom: 14px;
 position: relative;
 `
@@ -28,10 +29,11 @@ cursor:pointer;
 `
 export const IconActive = styled(Icon)`
 stroke: ${colors.accent};
-fill: ${colors.accent};`
+fill: ${colors.accent};
+`
 
 export const Image = styled.img`
-width: 274px; 
+width: 274px;
 height: 286px;
 border-radius: 14px;
 object-fit: cover;
@@ -42,12 +44,14 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 padding-right: 10px;
+padding-left: 10px;
 color: ${colors.text};
 font-family: Manrope;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 1.5;
+opacity: 1;
 `
 export const Title = styled.h2`
 margin-bottom: 8px;
@@ -63,5 +67,7 @@ padding-right: 50px;
 `
 
 export const FeaturesWrapper = styled.div`
-margin-bottom: 28px;`
+margin-bottom: 28px;
+padding-left: 5px;
+`
 

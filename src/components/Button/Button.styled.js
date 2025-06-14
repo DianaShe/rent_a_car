@@ -15,6 +15,7 @@ line-height: 1.43;
 padding-top: 12px;
 padding-bottom: 12px;
 cursor: pointer;
+opacity: 1;
 
 &:active, &:hover {
     background: ${colors.buttonActive};
