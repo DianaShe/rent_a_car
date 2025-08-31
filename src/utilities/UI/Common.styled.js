@@ -7,12 +7,20 @@ export const Accent = styled.span`
 `;
 
 export const LoadMore = styled.button`
-  margin-top: 100px;
+  margin: 100px auto;
+  min-width: 250px;
+  max-height: 50px;
   border: none;
+  border-radius: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   cursor: pointer;
-  background: transparent;
-  text-decoration: underline;
-  color: ${colors.accent};
+  background: ${colors.accent};
+  color: ${colors.white};
+
+  &:hover {
+    background: ${colors.buttonActive};
+}
 `;
 
 export const Container = styled.div`
@@ -29,5 +37,4 @@ background-attachment: fixed;
 
 export const Page = styled.div`
   display: flex;
-  flex-direction: row;
-`;
+ `

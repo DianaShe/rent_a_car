@@ -7,6 +7,9 @@ top: 0px;
 left: 0px;
 width: 200px;
 height: 100vh;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
 background: ${colors.sidebarBack};
 padding: 0px 10px 0px 10px;
 `

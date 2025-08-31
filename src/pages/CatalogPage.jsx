@@ -32,9 +32,9 @@ const CatalogPage = () => {
     <Container>
       {loading && <Loader />}
       {cars && <CardGallery cars={cars} />}
-      <LoadMore type="button" onClick={incrementPage}>
+      {!loading && <LoadMore type="button" onClick={incrementPage}>
         Load more
-      </LoadMore>
+      </LoadMore>}
     </Container>
   );
 };

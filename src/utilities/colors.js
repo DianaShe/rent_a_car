@@ -3,7 +3,7 @@ export const colors = {
     white: "#fff",
     buttonActive: "#0B44CD",
     text: "#121417",
-    features: "rgba(18, 20, 23, 0.50)",
-    background: "#bfcae5",
+    features: "#25272aff",
+    background: "#bfcae5bf",
     sidebarBack: "#363535",
 }
