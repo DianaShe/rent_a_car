@@ -12,9 +12,7 @@
 ### Detail information about the car in a separate modal window. 
 ![Detail info](/assets/Details.png)
 ### Contact us by simply pressing a button "Rental car" or using info in Contacts section.
-![Contact us](/assets/Button_to_contact.png)
-
-### Add cars to favorite and choose among them.
+### Moreover, add cars to favorite by pressing Heart Icon and choose among them.
 ![Favorites](/assets/Favorites.png)
 
 
